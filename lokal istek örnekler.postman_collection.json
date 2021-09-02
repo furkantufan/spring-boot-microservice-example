@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "d7cf0a5c-56bb-44d0-9a23-faa0a19e0d38",
+		"name": "lokal istek örnekler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3333/api/product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "randomSecureKeyUsername!",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "randomSecureKeyPassword!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/api/product",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3333/api/product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "randomSecureKeyUsername!",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "randomSecureKeyPassword!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test_2\",\n\t\"price\":\"271\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3333/api/product",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

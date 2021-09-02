@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "b7d4f414-e4d3-4ef0-a18e-e113806694c9",
+		"name": "heroku deploy istek örnekler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3333/api/product Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "randomSecureUserNames!!",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "randomKeyPassword!.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sha-microservice-product-1-ft.herokuapp.com/api/product",
+					"protocol": "https",
+					"host": [
+						"sha-microservice-product-1-ft",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3333/api/product Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "randomKeyPassword!.",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "randomSecureUserNames!!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test_1_heroku\",\n\t\"price\":\"27\"\n}"
+				},
+				"url": {
+					"raw": "https://sha-microservice-product-1-ft.herokuapp.com/api/product",
+					"protocol": "https",
+					"host": [
+						"sha-microservice-product-1-ft",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
